@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{026DE4DA-C4BF-44CC-B2E5-E39D21A37095}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoachingMentoringInfra", "CoachingMentoringInfra\CoachingMentoringInfra.csproj", "{7DFC3901-E8B6-4403-88C8-E1071848A83D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoachingMentoringInfra", "CoachingMentoringInfra\CoachingMentoringInfra.csproj", "{7DFC3901-E8B6-4403-88C8-E1071848A83D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoachingMentoringDomain", "CoachingMentoringDomain\CoachingMentoringDomain.csproj", "{BF7D8CD1-436E-41DE-B484-731E72D0D6F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,6 +17,10 @@ Global
 		{7DFC3901-E8B6-4403-88C8-E1071848A83D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DFC3901-E8B6-4403-88C8-E1071848A83D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DFC3901-E8B6-4403-88C8-E1071848A83D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF7D8CD1-436E-41DE-B484-731E72D0D6F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF7D8CD1-436E-41DE-B484-731E72D0D6F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF7D8CD1-436E-41DE-B484-731E72D0D6F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF7D8CD1-436E-41DE-B484-731E72D0D6F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

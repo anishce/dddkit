@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="MentoringContext\" />
+    <Folder Include="LearningAndDevelopmentContext\" />
+    <Folder Include="FeedbackAndReviewContext\" />
+    <Folder Include="SkillAndExpertiseContext\" />
+    <Folder Include="PerformanceDevelopmentContext\" />
+    <Folder Include="UserManagementContext\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CoachingMentoringInfra\CoachingMentoringInfra.csproj" />
+  </ItemGroup>
+
+</Project>

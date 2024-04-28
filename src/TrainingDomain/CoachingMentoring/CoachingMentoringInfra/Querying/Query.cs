@@ -1,0 +1,41 @@
+﻿using System.Collections.Generic;
+
+namespace CoachingMentoringInfra.Querying
+{
+    public class Query
+    {
+        private IList<Query> _subQueries = new List<Query>();
+        private IList<Criterion> _criteria = new List<Criterion>();
+
+        public QueryName Name { get; set; }
+
+        public IEnumerable<Criterion> Criteria
+        {
+            get { return _criteria; }
+        }
+
+        public bool IsNamedQuery()
+        {
+            return Name != QueryName.Dynamic;
+        }
+
+        public IEnumerable<Query> SubQueries
+        {
+            get { return _subQueries; }
+        }
+
+        public void AddSubQuery(Query subQuery)
+        {
+            _subQueries.Add(subQuery);
+        }
+
+        public void Add(Criterion criterion)
+        {
+            _criteria.Add(criterion);
+        }
+
+        public QueryOperator QueryOperator { get; set; }
+
+        public OrderByClause OrderByProperty { get; set; }
+    }
+}

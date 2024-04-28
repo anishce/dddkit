@@ -11,7 +11,6 @@
     <Folder Include="FeedbackAndReviewContext\" />
     <Folder Include="SkillAndExpertiseContext\" />
     <Folder Include="PerformanceDevelopmentContext\" />
-    <Folder Include="UserManagementContext\" />
   </ItemGroup>
 
   <ItemGroup>

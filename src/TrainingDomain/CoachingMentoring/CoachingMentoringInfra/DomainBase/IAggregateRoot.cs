@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CoachingMentoringInfra.DomainBase
 {
-    internal class IAggregateRoot
+    public interface IAggregateRoot
     {
     }
 }

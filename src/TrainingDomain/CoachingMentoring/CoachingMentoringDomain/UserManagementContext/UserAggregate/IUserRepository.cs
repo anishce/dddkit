@@ -1,15 +1,18 @@
-﻿namespace CoachingMentoringDomain.UserManagementContext.UserAggregate
+﻿using CoachingMentoringInfra.Querying;
+using System.Collections.Generic;
+
+namespace CoachingMentoringDomain.UserManagementContext.UserAggregate
 {
     public interface IUserRepository<TId>
     {
         void Add(User user);
-        IEnumerable<UserDto> FindAll();
+        IEnumerable<User> FindAll();
         IEnumerable<User> FindBy(string query, int index, int count);
         IEnumerable<User> FindBy(string query, int index, int count, out long totalRows);
-        IEnumerable<UserDto> FindBy(UserSearchCriteria criteria, out long totalRows);
+        IEnumerable<User> FindBy(Query criteria, out long totalRows);
         User FindBy(TId id);
-        LoginDto FindBy(string userName);
-        IEnumerable<UserDto> FindBy(bool isActive);
+        User FindBy(string userName);
+        IEnumerable<User> FindBy(bool isActive);
         bool Remove(TId id, int version);
         void Save(User user);
     }

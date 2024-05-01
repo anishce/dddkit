@@ -14,8 +14,6 @@ namespace CoachingMentoringDomain.UserManagementContext.UserAggregate
             PhoneBooks = phoneBooks;
             FaxNumber = faxNumber;
             Remarks = remarks;
-
-            base.ThrowExceptionIfInvalid();
         }
         public IEnumerable<EmailBook> EmailBooks { get; private set; }
 
@@ -35,12 +33,10 @@ namespace CoachingMentoringDomain.UserManagementContext.UserAggregate
         {
             if(EmailBooks is null || EmailBooks?.Count()==0)
             {
-                base.AddBrokenValidationRule("No email id provided.");
             }
 
             if (PhoneBooks is null || PhoneBooks?.Count() == 0)
             {
-                base.AddBrokenValidationRule("No phone number provided.");
             }
         }
     }

@@ -13,8 +13,6 @@ namespace CoachingMentoringDomain.UserManagementContext.UserAggregate
         {
             Initialize(firstName, middleName, lastName, userName, password, roleId, contact, addresses, isActive, remarks,
                 createdBy, createdDate, modifiedBy, modifiedDate);
-
-            base.ThrowExceptionIfInvalid();
         }
 
         public string FirstName { get; private set; }
@@ -36,27 +34,22 @@ namespace CoachingMentoringDomain.UserManagementContext.UserAggregate
         {
             if (string.IsNullOrWhiteSpace(FirstName))
             {
-                base.AddBrokenValidationRule("First name is required.");
             }
 
             if (string.IsNullOrWhiteSpace(MiddleName))
             {
-                base.AddBrokenValidationRule("Middle name is required.");
             }
 
             if (string.IsNullOrWhiteSpace(UserName))
             {
-                base.AddBrokenValidationRule("User name is required.");
             }
 
             if (Contact is null)
             {
-                base.AddBrokenValidationRule("No contact details provided.");
             }
 
             if (Addresses is null || Addresses?.Count() == 0)
             {
-                base.AddBrokenValidationRule("No address details provided.");
             }
         }
 

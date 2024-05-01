@@ -11,7 +11,6 @@ namespace CoachingMentoringDomain.UserManagementContext.UserAggregate
         {
             Initialize(addressType, street, city, state, postalCode);
 
-            base.ThrowExceptionIfInvalid();
         }
         public AddressType TypeOfAddress { get; private set; }
 
@@ -32,22 +31,18 @@ namespace CoachingMentoringDomain.UserManagementContext.UserAggregate
         {
             if (string.IsNullOrWhiteSpace(Street))
             {
-                base.AddBrokenValidationRule("An address must have a Street.");
             }
 
             if (string.IsNullOrWhiteSpace(City))
             {
-                base.AddBrokenValidationRule("An address must have a City.");
             }
 
             if (string.IsNullOrWhiteSpace(State))
             {
-                base.AddBrokenValidationRule("An address must have a State.");
             }
 
             if (string.IsNullOrWhiteSpace(PostalCode))
             {
-                base.AddBrokenValidationRule("An address must have a PostalCode.");
             }
         }
 

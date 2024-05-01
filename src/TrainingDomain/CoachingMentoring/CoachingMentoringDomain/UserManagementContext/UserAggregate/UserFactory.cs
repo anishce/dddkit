@@ -1,4 +1,8 @@
-﻿namespace AjSys.TaskManagement.User.Domain.Models.UserAggregate
+﻿using CoachingMentoringDomain.UserManagementContext.UserAggregate;
+using System;
+using System.Collections.Generic;
+
+namespace CoachingMentoringDomain.UserManagementContext.UserAggregate
 {
     public class UserFactory : IUserFactory
     {

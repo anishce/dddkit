@@ -23,6 +23,7 @@ namespace CoachingMentoringDomain.UserManagementContext.RoleAggregate
         {
             if (string.IsNullOrWhiteSpace(Name))
             {
+                throw new ArgumentNullException(nameof(Name));
             }
         }
 

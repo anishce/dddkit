@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Xml.Linq;
 
 namespace CoachingMentoringDomain.UserManagementContext.UserAggregate
 { 
@@ -34,22 +35,27 @@ namespace CoachingMentoringDomain.UserManagementContext.UserAggregate
         {
             if (string.IsNullOrWhiteSpace(FirstName))
             {
+                throw new ArgumentNullException(nameof(FirstName));
             }
 
             if (string.IsNullOrWhiteSpace(MiddleName))
             {
+                throw new ArgumentNullException(nameof(MiddleName));
             }
 
             if (string.IsNullOrWhiteSpace(UserName))
             {
+                throw new ArgumentNullException(nameof(UserName));
             }
 
             if (Contact is null)
             {
+                throw new ArgumentNullException(nameof(Contact));
             }
 
             if (Addresses is null || Addresses?.Count() == 0)
             {
+                throw new ArgumentNullException(nameof(Addresses));
             }
         }
 

@@ -5,29 +5,32 @@
 
 using CoachingMentoringInfra.DomainBase;
 using System;
+using System.Collections.Generic;
 
 namespace CoachingMentoringDomain.CoachingContext.CoachAggregate
 {
-    public class Certification : BaseEntity<int>, IAggregateRoot
+    public class Certification : BaseValueObject<Certification>
     {
-        public Certification(int id, string name, string remarks, string createdBy, DateTime createdDate, string modifiedBy, DateTime? modifiedDate, int version) : base(id,version)
+        public Certification(string name, string issuingOrganization, DateTime dateObtained, string remarks) : base()
         {
             Name = name;
+            IssuingOrganization = issuingOrganization;
+            DateObtained = dateObtained;
             Remarks = remarks;
-            CreatedBy = createdBy;
-            CreatedDate = createdDate;
-            ModifiedBy = modifiedBy;
-            ModifiedDate = modifiedDate;
         }
 
         public string Name { get; private set; }
-        public string Remarks { get; private set; }
-        public string CreatedBy { get; private set; }
-        public DateTime CreatedDate { get; private set; }
-        public string ModifiedBy { get; private set; }
-        public DateTime? ModifiedDate { get; private set; }
+        public string IssuingOrganization { get; set; }
 
-        protected override void ValidateEntity()
+        public DateTime DateObtained { get; set; }
+        public string Remarks { get; private set; }
+
+        protected override IEnumerable<object> GetAttributesToBeCheckForEquality()
+        {
+            return new object[] { Name };
+        }
+
+        protected override void Validate()
         {
             if (string.IsNullOrWhiteSpace(Name))
             {

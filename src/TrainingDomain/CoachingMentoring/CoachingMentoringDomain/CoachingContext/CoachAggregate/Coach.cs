@@ -6,7 +6,8 @@ namespace CoachingMentoringDomain.CoachingContext.CoachAggregate
 {
     public class Coach : BaseEntity<int>, IAggregateRoot
     {
-        public Coach(int id, string firstName, string lastName, string email, string phone, IEnumerable<int> specializationIds, IEnumerable<int> certificationIds)
+        public Coach(int id, string firstName, string lastName, string email, string phone, 
+            IEnumerable<Specialization> specializations, IEnumerable<Certification> certifications, int experience, string bio, double rating)
         {
             
         }

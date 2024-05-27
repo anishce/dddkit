@@ -5,14 +5,12 @@
 
 using CoachingMentoringInfra.DomainBase;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace CoachingMentoringDomain.CoachingContext.CoachAggregate
 {
     internal class Specialization : BaseEntity<int>, IAggregateRoot
     {
-        public Specialization(int id, string name, string remarks, string createdBy, DateTime createdDate, string modifiedBy, DateTime? modifiedDate int version) : base(id, version)
+        public Specialization(int id, string name, string remarks, string createdBy, DateTime createdDate, string modifiedBy, DateTime? modifiedDate, int version) : base(id, version)
         {
             Name = name;
             Remarks = remarks;
@@ -31,7 +29,10 @@ namespace CoachingMentoringDomain.CoachingContext.CoachAggregate
 
         protected override void ValidateEntity()
         {
-            throw new NotImplementedException();
+            if (string.IsNullOrWhiteSpace(Name))
+            {
+                throw new ArgumentNullException(nameof(Name));
+            }
         }
     }
 }

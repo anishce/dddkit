@@ -1,10 +1,19 @@
-﻿using System;
+﻿using CoachingMentoringInfra.DomainBase;
+using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace CoachingMentoringDomain.CoachingContext.CoachAggregate
 {
-    internal class Coach
+    public class Coach : BaseEntity<int>, IAggregateRoot
     {
+        public Coach(int id, string firstName, string lastName, string email, string phone, IEnumerable<int> specializationIds, IEnumerable<int> certificationIds)
+        {
+            
+        }
+
+        protected override void ValidateEntity()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

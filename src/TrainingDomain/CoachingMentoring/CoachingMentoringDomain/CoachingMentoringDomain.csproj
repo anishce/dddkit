@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="CoachingContext\Shared\" />
     <Folder Include="MentoringContext\" />
     <Folder Include="LearningAndDevelopmentContext\" />
     <Folder Include="FeedbackAndReviewContext\" />

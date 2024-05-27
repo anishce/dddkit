@@ -12,8 +12,20 @@ namespace CoachingMentoringDomain.UserManagementContext.UserAggregate
             UserContact contact, IEnumerable<UserAddress> addresses, bool isActive, string remarks,
             string createdBy, DateTime createdDate, string modifiedBy, DateTime? modifiedDate, int version) : base(id, version)
         {
-            Initialize(firstName, middleName, lastName, userName, password, roleId, contact, addresses, isActive, remarks,
-                createdBy, createdDate, modifiedBy, modifiedDate);
+            FirstName = firstName;
+            MiddleName = middleName;
+            LastName = lastName;
+            UserName = userName;
+            Password = password;
+            RoleId = roleId;
+            Contact = contact;
+            Addresses = addresses;
+            IsActive = isActive;
+            Remarks = remarks;
+            CreatedBy = createdBy;
+            CreatedDate = createdDate;
+            ModifiedBy = modifiedBy;
+            ModifiedDate = modifiedDate;
         }
 
         public string FirstName { get; private set; }
@@ -57,26 +69,6 @@ namespace CoachingMentoringDomain.UserManagementContext.UserAggregate
             {
                 throw new ArgumentNullException(nameof(Addresses));
             }
-        }
-
-        private void Initialize(string firstName, string middleName, string lastName, string userName, string password,
-            int roleId, UserContact contact, IEnumerable<UserAddress> addresses, bool isActive, string remarks,
-            string createdBy, DateTime createdDate, string modifiedBy, DateTime? modifiedDate)
-        {
-            FirstName = firstName;
-            MiddleName = middleName;
-            LastName = lastName;
-            UserName = userName;
-            Password = password;
-            RoleId = roleId;
-            Contact = contact;
-            Addresses = addresses;
-            IsActive = isActive;
-            Remarks = remarks;
-            CreatedBy = createdBy;
-            CreatedDate = createdDate;
-            ModifiedBy = modifiedBy;
-            ModifiedDate = modifiedDate;
         }
     }
 }

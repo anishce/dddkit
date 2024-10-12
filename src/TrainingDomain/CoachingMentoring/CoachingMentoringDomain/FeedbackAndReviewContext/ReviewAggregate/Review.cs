@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CoachingMentoringDomain.FeedbackAndReviewContext.ReviewAggregate
 {
-    internal class Review
+    public class Review : IAggregateRoot, BaseEntity
     {
     }
 }

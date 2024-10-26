@@ -1,4 +1,6 @@
-﻿using CoachingMentoringInfra.DomainBase;
+﻿// Ignore Spelling: bio
+
+using CoachingMentoringInfra.DomainBase;
 using System;
 using System.Collections.Generic;
 

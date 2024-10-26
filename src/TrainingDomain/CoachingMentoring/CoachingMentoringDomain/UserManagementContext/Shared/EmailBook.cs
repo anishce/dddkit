@@ -1,5 +1,7 @@
-﻿using CoachingMentoringInfra.DomainBase;
+﻿using System;
+using CoachingMentoringInfra.DomainBase;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 namespace CoachingMentoringDomain.UserManagementContext.Shared
 {
     public class EmailBook : BaseValueObject<EmailBook>
@@ -10,8 +12,6 @@ namespace CoachingMentoringDomain.UserManagementContext.Shared
 #pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
         {
             Initialize(type, email);
-
-            base.ThrowExceptionIfInvalid();
         }
 
         public EmailBookType Type { get; private set; }
@@ -28,16 +28,14 @@ namespace CoachingMentoringDomain.UserManagementContext.Shared
 
         protected override void Validate()
         {
-            //string emailRegularExpression = @"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$";
-
             if (string.IsNullOrWhiteSpace(Email))
             {
-                base.AddBrokenValidationRule("An email book must have an email.");
+                throw new ArgumentNullException("An email book must have an email.");
             }
-            //else if(!Regex.IsMatch(Email,emailRegularExpression))
-            //{
-            //    base.AddBrokenValidationRule("An email book must have a valid email.");
-            //}
+            else if (!Regex.IsMatch(Email, @"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$"))
+            {
+                throw new ArgumentException("An email book must have a valid email.");
+            }
         }
 
         private void Initialize(EmailBookType type, string email)

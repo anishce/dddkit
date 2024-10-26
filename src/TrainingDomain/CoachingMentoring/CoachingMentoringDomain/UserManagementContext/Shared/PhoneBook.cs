@@ -1,4 +1,5 @@
 ﻿using CoachingMentoringInfra.DomainBase;
+using System;
 using System.Collections.Generic;
 
 namespace CoachingMentoringDomain.UserManagementContext.Shared
@@ -9,8 +10,6 @@ namespace CoachingMentoringDomain.UserManagementContext.Shared
         {
             PhoneBookType = phoneBookType;
             PhoneNumber = phoneNumber;
-
-            ThrowExceptionIfInvalid();
         }
 
         public PhoneBookType PhoneBookType { get; private set; }
@@ -26,7 +25,7 @@ namespace CoachingMentoringDomain.UserManagementContext.Shared
         {
             if (string.IsNullOrWhiteSpace(PhoneNumber))
             {
-                base.AddBrokenValidationRule("A company should have phonenumber.");
+                throw new ArgumentNullException("A phone book should have phone number.");
             }
         }
     }

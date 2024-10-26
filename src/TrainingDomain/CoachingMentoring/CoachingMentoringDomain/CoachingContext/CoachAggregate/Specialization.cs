@@ -8,7 +8,7 @@ using System;
 
 namespace CoachingMentoringDomain.CoachingContext.CoachAggregate
 {
-    internal class Specialization : BaseEntity<int>, IAggregateRoot
+    public class Specialization : BaseEntity<int>, IAggregateRoot
     {
         public Specialization(int id, string name, string remarks, string createdBy, DateTime createdDate, string modifiedBy, DateTime? modifiedDate, int version) : base(id, version)
         {

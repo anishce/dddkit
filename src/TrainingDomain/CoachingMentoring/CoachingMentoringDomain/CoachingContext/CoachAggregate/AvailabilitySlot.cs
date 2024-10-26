@@ -9,7 +9,7 @@ using System.Text;
 
 namespace CoachingMentoringDomain.CoachingContext.CoachAggregate
 {
-    internal class AvailabilitySlot
+    internal class AvailabilitySlot : BaseValueObject<int>
     {
     }
 }

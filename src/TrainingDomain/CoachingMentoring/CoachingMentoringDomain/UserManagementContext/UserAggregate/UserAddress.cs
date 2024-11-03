@@ -1,4 +1,5 @@
 ﻿using CoachingMentoringInfra.DomainBase;
+using System;
 using System.Collections.Generic;
 
 namespace CoachingMentoringDomain.UserManagementContext.UserAggregate
@@ -31,18 +32,22 @@ namespace CoachingMentoringDomain.UserManagementContext.UserAggregate
         {
             if (string.IsNullOrWhiteSpace(Street))
             {
+                throw new ArgumentNullException(nameof(Street));
             }
 
             if (string.IsNullOrWhiteSpace(City))
             {
+                throw new ArgumentNullException(nameof(City));
             }
 
             if (string.IsNullOrWhiteSpace(State))
             {
+                throw new ArgumentNullException(nameof(State));
             }
 
             if (string.IsNullOrWhiteSpace(PostalCode))
             {
+                throw new ArgumentNullException(nameof(PostalCode));
             }
         }
 

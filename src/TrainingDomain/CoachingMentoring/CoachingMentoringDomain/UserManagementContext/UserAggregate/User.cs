@@ -34,6 +34,7 @@ namespace CoachingMentoringDomain.UserManagementContext.UserAggregate
         public string UserName { get; private set; }
         public string Password { get; private set; }
         public int RoleId { get; private set; }
+        public IEnumerable<int> PermissionIds { get; private set; }
         public UserContact Contact { get; private set; }
         public IEnumerable<UserAddress> Addresses { get; private set; }
         public bool IsActive { get; private set; }

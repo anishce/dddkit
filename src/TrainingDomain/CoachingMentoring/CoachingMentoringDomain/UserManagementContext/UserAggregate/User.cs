@@ -9,7 +9,7 @@ namespace CoachingMentoringDomain.UserManagementContext.UserAggregate
     public class User : BaseEntity<int>, IAggregateRoot
     {
         public User(int id, string firstName, string middleName, string lastName, string userName, string password, int roleId,
-            UserContact contact, IEnumerable<UserAddress> addresses, bool isActive, string remarks,
+            IEnumerable<int> permissionIds, UserContact contact, IEnumerable<UserAddress> addresses, bool isActive, string remarks,
             string createdBy, DateTime createdDate, string modifiedBy, DateTime? modifiedDate, int version) : base(id, version)
         {
             FirstName = firstName;
@@ -18,6 +18,7 @@ namespace CoachingMentoringDomain.UserManagementContext.UserAggregate
             UserName = userName;
             Password = password;
             RoleId = roleId;
+            PermissionIds = permissionIds;
             Contact = contact;
             Addresses = addresses;
             IsActive = isActive;

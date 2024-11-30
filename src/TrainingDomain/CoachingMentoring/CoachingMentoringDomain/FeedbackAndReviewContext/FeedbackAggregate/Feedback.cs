@@ -28,5 +28,6 @@ namespace CoachingMentoringDomain.FeedbackAndReviewContext.FeedbackAggregate
 
         public int Status {  get; private set; }
 
+        public int Visibility { get; private set; }
     }
 }

@@ -19,5 +19,9 @@ namespace CoachingMentoringDomain.FeedbackAndReviewContext.FeedbackAggregate
         public string Content { get; private set; } = null!;
         public int Rating { get; private set; }
         public FeedBackType FeedBackType { get; private set; }
+
+        public IEnumerable<string> Strengths { get; private set; } = null!;
+
+        public IEnumerable<string> AreasOfImprovement { get; private set; } = null!;
     }
 }

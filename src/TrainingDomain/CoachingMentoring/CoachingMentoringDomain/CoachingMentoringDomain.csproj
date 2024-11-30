@@ -9,7 +9,6 @@
     <Folder Include="CoachingContext\Shared\" />
     <Folder Include="MentoringContext\" />
     <Folder Include="LearningAndDevelopmentContext\" />
-    <Folder Include="FeedbackAndReviewContext\" />
     <Folder Include="SkillAndExpertiseContext\" />
     <Folder Include="PerformanceDevelopmentContext\" />
   </ItemGroup>

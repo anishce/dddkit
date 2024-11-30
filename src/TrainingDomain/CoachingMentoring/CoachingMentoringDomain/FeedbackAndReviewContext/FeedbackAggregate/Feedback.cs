@@ -23,5 +23,10 @@ namespace CoachingMentoringDomain.FeedbackAndReviewContext.FeedbackAggregate
         public IEnumerable<string> Strengths { get; private set; } = null!;
 
         public IEnumerable<string> AreasOfImprovement { get; private set; } = null!;
+
+        public string? Suggestion { get; private set; }
+
+        public int Status {  get; private set; }
+
     }
 }

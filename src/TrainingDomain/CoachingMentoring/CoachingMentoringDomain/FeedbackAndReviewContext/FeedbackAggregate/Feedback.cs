@@ -9,11 +9,15 @@ namespace CoachingMentoringDomain.FeedbackAndReviewContext.FeedbackAggregate
     {
         public Feedback(int id, int version) : base(id, version)
         {
-            
+
         }
         protected override void ValidateEntity()
         {
             throw new NotImplementedException();
         }
+
+        public string Content { get; private set; } = null!;
+        public int Rating { get; private set; } = null!;
+
     }
 }

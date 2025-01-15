@@ -1,4 +1,9 @@
-﻿using AnishCeDev.Ddd.Infra.DomainBase;
+﻿// ************************************************************************
+// Copyright (c) 2025 AnishCeDev All Rights Reserved.
+// Author: AnishCeDev
+// ************************************************************************
+
+using AnishCeDev.Ddd.Infra.DomainBase;
 
 namespace AnishCeDev.Ddd.Infra.RepositoryBase
 {

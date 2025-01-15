@@ -1,10 +1,15 @@
-﻿using AnishCeDev.Ddd.Infra.DomainBase;
+﻿// ************************************************************************
+// Copyright (c) 2025 AnishCeDev All Rights Reserved.
+// Author: AnishCeDev
+// ************************************************************************
+
+using AnishCeDev.Ddd.Infra.DomainBase;
 using AnishCeDev.Ddd.Infra.Querying;
 using System.Collections.Generic;
 
 namespace AnishCeDev.Ddd.Infra.RepositoryBase
 {
-    public abstract class RepositoryBase<T, TId> : IRepository<T, TId>  where T : IAggregateRoot
+    public abstract class RepositoryBase<T, TId> : IRepository<T, TId> where T : IAggregateRoot
     {
         #region IRepository
         public abstract void Add(T entity);

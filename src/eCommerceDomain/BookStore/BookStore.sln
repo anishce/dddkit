@@ -5,6 +5,8 @@ VisualStudioVersion = 17.12.35514.174
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnishCeDev.Ddd.Infra", "Infra\AnishCeDev.Ddd.Infra.csproj", "{1A43D504-B835-4695-8AEA-92519809D61D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnishCeDev.BookStore.Domain", "AnishCeDev.BookStore.Domain\AnishCeDev.BookStore.Domain.csproj", "{07CFDE0C-D7B1-4184-B1A9-618B87EB9A6A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{1A43D504-B835-4695-8AEA-92519809D61D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A43D504-B835-4695-8AEA-92519809D61D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A43D504-B835-4695-8AEA-92519809D61D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07CFDE0C-D7B1-4184-B1A9-618B87EB9A6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07CFDE0C-D7B1-4184-B1A9-618B87EB9A6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07CFDE0C-D7B1-4184-B1A9-618B87EB9A6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07CFDE0C-D7B1-4184-B1A9-618B87EB9A6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

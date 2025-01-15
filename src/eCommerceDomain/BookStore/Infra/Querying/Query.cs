@@ -1,4 +1,9 @@
-﻿using System.Collections.Generic;
+﻿// ************************************************************************
+// Copyright (c) 2025 AnishCeDev All Rights Reserved.
+// Author: AnishCeDev
+// ************************************************************************
+
+using System.Collections.Generic;
 
 namespace AnishCeDev.Ddd.Infra.Querying
 {

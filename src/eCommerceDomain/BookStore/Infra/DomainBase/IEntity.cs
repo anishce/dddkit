@@ -1,6 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿// ************************************************************************
+// Copyright (c) 2025 AnishCeDev All Rights Reserved.
+// Author: AnishCeDev
+// ************************************************************************
 
 namespace AnishCeDev.Ddd.Infra.DomainBase
 {

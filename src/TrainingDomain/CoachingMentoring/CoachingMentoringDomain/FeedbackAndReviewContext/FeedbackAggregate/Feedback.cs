@@ -1,7 +1,11 @@
-﻿using CoachingMentoringInfra.DomainBase;
+﻿// ************************************************************************
+// Copyright (c) AnishCeDev All Rights Reserved.
+// Author: AnishCeDev
+// ************************************************************************
+
+using CoachingMentoringInfra.DomainBase;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace CoachingMentoringDomain.FeedbackAndReviewContext.FeedbackAggregate
 {
@@ -26,7 +30,7 @@ namespace CoachingMentoringDomain.FeedbackAndReviewContext.FeedbackAggregate
 
         public string? Suggestion { get; private set; }
 
-        public int Status {  get; private set; }
+        public int Status { get; private set; }
 
         public int Visibility { get; private set; }
     }

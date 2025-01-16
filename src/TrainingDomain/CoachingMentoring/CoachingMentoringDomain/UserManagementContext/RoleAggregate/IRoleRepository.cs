@@ -1,4 +1,9 @@
-﻿using System.Collections.Generic;
+﻿// ************************************************************************
+// Copyright (c) AnishCeDev All Rights Reserved.
+// Author: AnishCeDev
+// ************************************************************************
+
+using System.Collections.Generic;
 
 namespace CoachingMentoringDomain.UserManagementContext.RoleAggregate
 {

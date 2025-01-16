@@ -7,7 +7,7 @@ using CoachingMentoringInfra.RepositoryBase;
 
 namespace CoachingMentoringDomain.CoachingContext.CoachAggregate
 {
-    internal interface ICoachRepository : IRepository<Coach,int>
+    internal interface ICoachRepository : IRepository<Coach, int>
     {
     }
 }

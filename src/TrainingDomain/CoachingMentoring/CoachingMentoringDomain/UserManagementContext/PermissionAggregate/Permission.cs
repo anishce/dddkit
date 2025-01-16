@@ -10,7 +10,7 @@ namespace CoachingMentoringDomain.UserManagementContext.PermissionAggregate
 {
     public class Permission : BaseEntity<int>, IAggregateRoot
     {
-        public Permission(int id, string name, string description, string createdBy, DateTime createdDate, string modifiedBy, DateTime? modifiedDate, int version) : base(id,version)
+        public Permission(int id, string name, string description, string createdBy, DateTime createdDate, string modifiedBy, DateTime? modifiedDate, int version) : base(id, version)
         {
             Initialize(name, description, createdBy, createdDate, modifiedBy, modifiedDate);
         }

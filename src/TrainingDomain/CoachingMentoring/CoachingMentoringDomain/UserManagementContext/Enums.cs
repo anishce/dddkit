@@ -1,4 +1,9 @@
-﻿namespace CoachingMentoringDomain.UserManagementContext
+﻿// ************************************************************************
+// Copyright (c) AnishCeDev All Rights Reserved.
+// Author: AnishCeDev
+// ************************************************************************
+
+namespace CoachingMentoringDomain.UserManagementContext
 {
     public enum PhoneBookType
     {

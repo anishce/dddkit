@@ -1,7 +1,10 @@
-﻿using CoachingMentoringInfra.DomainBase;
+﻿// ************************************************************************
+// Copyright (c) AnishCeDev All Rights Reserved.
+// Author: AnishCeDev
+// ************************************************************************
+
+using CoachingMentoringInfra.DomainBase;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace CoachingMentoringDomain.FeedbackAndReviewContext.ReviewAggregate
 {
@@ -9,7 +12,7 @@ namespace CoachingMentoringDomain.FeedbackAndReviewContext.ReviewAggregate
     {
         public Review(int id, int version) : base(id, version)
         {
-            
+
         }
         protected override void ValidateEntity()
         {

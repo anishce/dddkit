@@ -1,4 +1,9 @@
-﻿using System;
+﻿// ************************************************************************
+// Copyright (c) AnishCeDev All Rights Reserved.
+// Author: AnishCeDev
+// ************************************************************************
+
+using System;
 
 namespace CoachingMentoringDomain.UserManagementContext.PermissionAggregate
 {

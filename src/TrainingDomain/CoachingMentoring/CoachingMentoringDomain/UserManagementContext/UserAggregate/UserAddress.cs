@@ -1,4 +1,9 @@
-﻿using CoachingMentoringInfra.DomainBase;
+﻿// ************************************************************************
+// Copyright (c) AnishCeDev All Rights Reserved.
+// Author: AnishCeDev
+// ************************************************************************
+
+using CoachingMentoringInfra.DomainBase;
 using System;
 using System.Collections.Generic;
 

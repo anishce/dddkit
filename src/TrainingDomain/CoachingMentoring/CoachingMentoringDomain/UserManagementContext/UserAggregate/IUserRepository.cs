@@ -1,4 +1,9 @@
-﻿using CoachingMentoringInfra.Querying;
+﻿// ************************************************************************
+// Copyright (c) AnishCeDev All Rights Reserved.
+// Author: AnishCeDev
+// ************************************************************************
+
+using CoachingMentoringInfra.Querying;
 using System.Collections.Generic;
 
 namespace CoachingMentoringDomain.UserManagementContext.UserAggregate

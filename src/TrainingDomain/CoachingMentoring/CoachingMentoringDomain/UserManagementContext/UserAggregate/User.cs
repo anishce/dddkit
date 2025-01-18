@@ -1,11 +1,15 @@
-﻿using CoachingMentoringInfra.DomainBase;
+﻿// ************************************************************************
+// Copyright (c) AnishCeDev All Rights Reserved.
+// Author: AnishCeDev
+// ************************************************************************
+
+using CoachingMentoringInfra.DomainBase;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Xml.Linq;
 
 namespace CoachingMentoringDomain.UserManagementContext.UserAggregate
-{ 
+{
     public class User : BaseEntity<int>, IAggregateRoot
     {
         public User(int id, string firstName, string middleName, string lastName, string userName, string password, int roleId,

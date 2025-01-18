@@ -1,4 +1,9 @@
-﻿using CoachingMentoringDomain.UserManagementContext.Shared;
+﻿// ************************************************************************
+// Copyright (c) AnishCeDev All Rights Reserved.
+// Author: AnishCeDev
+// ************************************************************************
+
+using CoachingMentoringDomain.UserManagementContext.Shared;
 using CoachingMentoringInfra.DomainBase;
 using System;
 using System.Collections.Generic;
@@ -31,7 +36,7 @@ namespace CoachingMentoringDomain.UserManagementContext.UserAggregate
 
         protected override void Validate()
         {
-            if(EmailBooks is null || EmailBooks?.Count()==0)
+            if (EmailBooks is null || EmailBooks?.Count() == 0)
             {
             }
 

@@ -1,4 +1,8 @@
-﻿using CoachingMentoringDomain.UserManagementContext.UserAggregate;
+﻿// ************************************************************************
+// Copyright (c) AnishCeDev All Rights Reserved.
+// Author: AnishCeDev
+// ************************************************************************
+
 using System;
 using System.Collections.Generic;
 

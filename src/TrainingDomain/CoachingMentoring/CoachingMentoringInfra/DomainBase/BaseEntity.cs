@@ -1,8 +1,13 @@
-﻿namespace CoachingMentoringInfra.DomainBase
+﻿// ************************************************************************
+// Copyright (c) AnishCeDev All Rights Reserved.
+// Author: AnishCeDev
+// ************************************************************************
+
+namespace CoachingMentoringInfra.DomainBase
 {
     public abstract class BaseEntity<TId> : IEntity
     {
-        public BaseEntity(TId id,int version)
+        public BaseEntity(TId id, int version)
         {
             Id = id;
             Version = version;

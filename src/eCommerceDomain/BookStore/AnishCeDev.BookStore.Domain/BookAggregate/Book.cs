@@ -5,14 +5,14 @@
 
 // Ignore Spelling: Aj
 
-using AjSys.DigitalBookShop.BookCatalog.Domain.CategoryAggregate;
-using AjSys.DigitalBookShop.BookCatalog.Domain.PublisherAggregate;
-using AjSys.DigitalBookShop.BookCatalog.Infrastructure.DomainBase;
+using AnishCeDev.BookStore.Domain.CategoryAggregate;
+using AnishCeDev.BookStore.Domain.PublisherAggregate;
+using AnishCeDev.Ddd.Infra.DomainBase;
 using System;
 
-namespace AjSys.DigitalBookShop.BookCatalog.Domain.BookAggregate
+namespace AnishCeDev.BookStore.Domain.BookAggregate
 {
-    public class Book : EntityBase<Guid>, IAggregateRoot
+    public class Book : BaseEntity<Guid>, IAggregateRoot
     {
         public Book(Guid id, string title, string author, BookVariant variant, BookGenre genre, Category category, string description, 
             Publisher publisher, decimal price, BookEdition edition, int stock, int version) : base(id, version)

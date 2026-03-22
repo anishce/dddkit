@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnishCeDev.Ddd.Infra", "Inf
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnishCeDev.BookStore.Domain", "AnishCeDev.BookStore.Domain\AnishCeDev.BookStore.Domain.csproj", "{07CFDE0C-D7B1-4184-B1A9-618B87EB9A6A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnishCeDev.BookStore.ShoppingCart.Domain", "AnishCeDev.BookStore.ShoppingCart.Domain\AnishCeDev.BookStore.ShoppingCart.Domain.csproj", "{3E7586C6-5857-4EB7-A41A-BADA16C15197}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{07CFDE0C-D7B1-4184-B1A9-618B87EB9A6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07CFDE0C-D7B1-4184-B1A9-618B87EB9A6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07CFDE0C-D7B1-4184-B1A9-618B87EB9A6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E7586C6-5857-4EB7-A41A-BADA16C15197}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E7586C6-5857-4EB7-A41A-BADA16C15197}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E7586C6-5857-4EB7-A41A-BADA16C15197}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E7586C6-5857-4EB7-A41A-BADA16C15197}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
